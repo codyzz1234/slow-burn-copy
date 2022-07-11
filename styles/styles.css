@@ -1,4 +1,8 @@
 
+html{
+    font-size:62.5%;
+}
+
 body{
     background-color: black;
     margin: 0;
@@ -6,6 +10,7 @@ body{
     font-family: 'Poppins', sans-serif; 
 
 }
+
 
 
 .grid-container{
@@ -17,17 +22,18 @@ body{
     background-color: lightblue;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 
-                        10%
+                        10rem;
                         repeat(5,auto);
-
     grid-template-areas:
     "nav nav"
-    "story story";
+    "story story"
+    "video video";
     gap:10px;
 
 }
 /*nav bar*/
 .navbar{
+    font-size:1.6rem;
     padding: 0px;
     border: 5px solid green;
     align-self: start;
@@ -70,13 +76,20 @@ body{
 }
 /*the story*/
 .theStory{
+    font-size:3.5rem;
+    color: white;
     padding: 0px;
     align-self:start;
     grid-area:story;
-    background-color: white;
-    align-self:start;
+    background-color: black;
+    align-self:center;
     border: 5px solid green;
-    justify-self: start;
-    align-self:start
+    justify-self:stretch;
+    align-self:flex-start;
+
+}
+/* video */
+.video{
+    color:white;
 }
 
