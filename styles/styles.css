@@ -1,0 +1,82 @@
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+
+.grid-container{
+    display:grid;
+    margin:auto;
+    padding:0px;
+    height: 100vh;
+    width: 80%;
+    background-color: lightblue;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 
+                        10%
+                        repeat(5,auto);
+
+    grid-template-areas:
+    "nav nav"
+    "story story";
+    gap:10px;
+
+}
+/*nav bar*/
+.navbar{
+    padding: 0px;
+    border: 5px solid green;
+    align-self: start;
+    grid-area: nav;
+    background-color: white;
+}
+.navContainer{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer .list{
+    background-color: black;
+    display:inline-flex;
+    flex-wrap: wrap;
+    width:30%;
+    padding: 0px;
+
+    align-self: center;
+    justify-self: start;
+}
+.list li{
+    margin-left:10px;
+    color: white;
+    list-style-type: none;
+}
+.list a{
+    color:white;
+}
+
+.img-fluid{
+    width:100px;
+    height: 100px;
+}
+/*the story*/
+.theStory{
+    padding: 0px;
+    align-self:start;
+    grid-area:story;
+    background-color: white;
+    align-self:start;
+    border: 5px solid green;
+    justify-self: start;
+    align-self:start
+}
+
